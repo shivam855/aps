@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    testng.xml - TestNG Suite Configuration
+    Run with: mvn test
+    Or right-click this file in Eclipse > Run As > TestNG Suite
+-->
+<suite name="Automation Test Suite" verbose="1" parallel="none">
+
+    <!-- Ixigo train search — Selenium port of Playwright flow -->
+    <test name="Ixigo Train Search Tests">
+        <classes>
+            <class name="com.automation.tests.IxigoTrainSearchTest"/>
+        </classes>
+    </test>
+
+    <!-- Mock page + mock API sample tests -->
+    <!--
+    <test name="Sample Automation Tests">
+        <classes>
+            <class name="com.automation.tests.SampleAutomationTest"/>
+        </classes>
+    </test> 
+    -->
+
+    <!-- Login tests (require Excel test data) -->
+    <!--
+    <test name="Login Tests">
+        <classes>
+            <class name="com.automation.tests.LoginTest"/>
+        </classes>
+    </test>
+    -->
+
+</suite>

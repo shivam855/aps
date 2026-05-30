@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Login Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.automation.tests.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testLoginWithExcelData" invocation-numbers="1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automation.tests.LoginTest -->
+    </classes>
+  </test> <!-- Login Tests(failed) -->
+</suite> <!-- Failed suite [Automation Test Suite] -->

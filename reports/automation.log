@@ -1,0 +1,62 @@
+2026-05-30 22:36:06 [INFO ] com.automation.listeners.ExtentTestListener - Initializing Extent Report for suite: Automation Test Suite
+2026-05-30 22:36:06 [INFO ] com.automation.base.BaseTest - === Starting Browser Setup ===
+2026-05-30 22:36:10 [INFO ] com.automation.base.BaseTest - Navigated to: https://www.ixigo.com/trains
+2026-05-30 22:36:10 [DEBUG] com.automation.base.BaseTest - Mock mode: false
+2026-05-30 22:36:10 [DEBUG] com.automation.base.BaseTest - Mock API enabled: false
+2026-05-30 22:36:10 [INFO ] com.automation.listeners.ExtentTestListener - Test started: testDelhiToKanpurTrainSearch
+2026-05-30 22:36:10 [INFO ] com.automation.tests.IxigoTrainSearchTest - Step 1: Verify ixigo trains page is open
+2026-05-30 22:36:11 [DEBUG] com.automation.tests.IxigoTrainSearchTest - Current URL: https://www.ixigo.com/trains
+2026-05-30 22:36:11 [DEBUG] com.automation.tests.IxigoTrainSearchTest - Page title: Train Ticket Booking Online, Use IRCTC Login | ixigo
+2026-05-30 22:36:11 [INFO ] com.automation.tests.IxigoTrainSearchTest - Step 2: Select origin — New Delhi (NDLS)
+2026-05-30 22:36:11 [INFO ] com.automation.pages.BasePage - Entered origin query: New delhi
+2026-05-30 22:36:12 [DEBUG] com.automation.pages.BasePage - Selected autocomplete option: New Delhi (NDLS)
+2026-05-30 22:36:12 [INFO ] com.automation.tests.IxigoTrainSearchTest - Step 3: Select destination — Kanpur Central (CNB)
+2026-05-30 22:36:12 [INFO ] com.automation.pages.BasePage - Entered destination query: kanpur
+2026-05-30 22:36:12 [DEBUG] com.automation.pages.BasePage - Selected autocomplete option: Kanpur Central
+2026-05-30 22:36:12 [INFO ] com.automation.tests.IxigoTrainSearchTest - Step 4: Select journey date (optional — Playwright: Fri + May 30,)
+2026-05-30 22:36:12 [INFO ] com.automation.tests.IxigoTrainSearchTest - Step 5: Click Book Train Tickets / Search
+2026-05-30 22:36:12 [INFO ] com.automation.pages.BasePage - Clicked Book Train Tickets / Search
+2026-05-30 22:36:12 [INFO ] com.automation.tests.IxigoTrainSearchTest - Step 6: Verify results heading
+2026-05-30 22:36:16 [DEBUG] com.automation.tests.IxigoTrainSearchTest - Results heading: Flights
+Up to 50% Off
+Hotels
+Trains
+Buses
+More
+Offers
+Customer Service
+Log in/Sign up
+Delhi to Kanpur Trains
+May
+Sat, 30
+Few Seats
+Sun, 31
+Few Seats
+Mon, 01
+Filling Fast
+Tue, 02
+Filling Fast
+Wed, 03
+Filling Fast
+Thu, 04
+Filling Fast
+Fri, 05
+Filling Fast
+Sat, 06
+Filling Fast
+Sun, 07
+Filling Fast
+Mon, 08
+Available
+Tue, 09
+Available
+Wed, 10
+Available
+Thu, 11
+Available
+Fri, 12
+Filling Fast
+2026-05-30 22:36:16 [INFO ] com.automation.tests.IxigoTrainSearchTest - === Ixigo Train Search Test PASSED ===
+2026-05-30 22:36:16 [INFO ] com.automation.base.BaseTest - Test PASSED: testDelhiToKanpurTrainSearch
+2026-05-30 22:36:16 [INFO ] com.automation.base.BaseTest - === Browser Closed ===
+2026-05-30 22:36:16 [INFO ] com.automation.listeners.ExtentTestListener - Flushing Extent Report

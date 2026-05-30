@@ -1,0 +1,49 @@
+{
+  "success": true,
+  "data": {
+    "sourceStationCode": "NDLS",
+    "destinationStationCode": "LTT",
+    "sourceStationName": "New Delhi",
+    "destinationStationName": "Mumbai Lokmanya Tilak",
+    "dateOfJourney": "02-06-2026",
+    "totalTrains": 3,
+    "trains": [
+      {
+        "trainNumber": "12951",
+        "trainName": "Mumbai Rajdhani Express",
+        "sourceStationCode": "NDLS",
+        "destinationStationCode": "LTT",
+        "departureTime": "16:55",
+        "arrivalTime": "08:35",
+        "duration": "15h 40m",
+        "runningDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "availableClasses": ["SL", "3A", "2A", "1A"],
+        "availability": "AVAILABLE"
+      },
+      {
+        "trainNumber": "12618",
+        "trainName": "MNGLA LKSMP EXP",
+        "sourceStationCode": "NDLS",
+        "destinationStationCode": "LTT",
+        "departureTime": "05:50",
+        "arrivalTime": "04:40",
+        "duration": "22h 50m",
+        "runningDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "availableClasses": ["SL", "3A", "2A"],
+        "availability": "AVAILABLE"
+      },
+      {
+        "trainNumber": "22222",
+        "trainName": "Mock Superfast Express",
+        "sourceStationCode": "NDLS",
+        "destinationStationCode": "LTT",
+        "departureTime": "12:30",
+        "arrivalTime": "06:15",
+        "duration": "17h 45m",
+        "runningDays": ["Mon", "Wed", "Fri"],
+        "availableClasses": ["SL", "3A"],
+        "availability": "WAITLIST"
+      }
+    ]
+  }
+}
