@@ -44,6 +44,12 @@ public class ConfigReader {
     public static String getBrowser()          { return getProperty("browser"); }
     public static String getBaseUrl()          { return getProperty("base.url"); }
     public static String getTrainsUrl()        { return getProperty("trains.url", getBaseUrl()); }
+    public static String getFlightsUrl()       { return getProperty("flights.url", "https://www.ixigo.com/flights"); }
+    public static String getFlightMockPagePath() {
+        return getProperty("mock.flight.page.path", "src/test/resources/mock/flight-booking-mock.html");
+    }
+    public static int    getIxigoOtpWaitSeconds() { return Integer.parseInt(getProperty("ixigo.otp.wait.seconds", "90")); }
+    public static boolean isSkipLogin()          { return Boolean.parseBoolean(getProperty("ixigo.skip.login", "false")); }
     public static String getIxigoOriginQuery() { return getProperty("ixigo.origin.query"); }
     public static String getIxigoOriginStation() { return getProperty("ixigo.origin.station"); }
     public static String getIxigoDestinationQuery() { return getProperty("ixigo.destination.query"); }
@@ -78,5 +84,18 @@ public class ConfigReader {
     /** URL used at test startup — mock page or live base URL */
     public static String getStartUrl() {
         return useMockPage() ? getMockPageUrl() : getBaseUrl();
+    }
+
+    /** Week 3 flight booking — mock HTML or live ixigo flights */
+    public static String getFlightBookingStartUrl() {
+        if (useMockPage()) {
+            String path = getFlightMockPagePath();
+            File mockFile = new File(path);
+            if (!mockFile.exists()) {
+                throw new RuntimeException("Flight mock page not found at: " + mockFile.getAbsolutePath());
+            }
+            return mockFile.toURI().toString();
+        }
+        return getFlightsUrl();
     }
 }

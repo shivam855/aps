@@ -3,13 +3,13 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.automation.tests.IxigoTrainSearchTest">
+      <class name="com.automation.tests.IxigoFlightBookingTest">
         <methods>
-          <include name="testDelhiToKanpurTrainSearch"/>
           <include name="setUp"/>
+          <include name="testFlightBookingFlowFromExcel" invocation-numbers="0 1"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.automation.tests.IxigoTrainSearchTest -->
+      </class> <!-- com.automation.tests.IxigoFlightBookingTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

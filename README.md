@@ -112,6 +112,59 @@ public class HomeTest extends BaseTest {
 
 ---
 
+## Week 3 — Live ixigo Flight Booking (Login → Payment)
+
+### What was added
+
+| Item | Location |
+|------|----------|
+| Live flights home | `IxigoFlightsHomePage.java` |
+| Mobile + OTP login | `IxigoLoginPage.java` |
+| Results / review / traveller / payment | `IxigoFlightResultsPage`, `IxigoFlightReviewPage`, `IxigoTravellerDetailsPage`, `IxigoPaymentPage` |
+| Data-driven test | `IxigoFlightBookingTest.java` |
+| Excel sheet | `TestData.xlsx` → **FlightBookingData** |
+
+### Flow on https://www.ixigo.com/flights
+
+1. **Login** — mobile number → **enter OTP manually** in the browser (90s window)
+2. **Search** — From / To airports (autocomplete)
+3. **Select flight** — first **Book** on results
+4. **Review** — **Continue**
+5. **Traveller details** — name, mobile, email → Continue
+6. **Payment** — assert payment step is shown
+
+### Config (`config.properties`)
+
+```properties
+use.mock.page=false
+flights.url=https://www.ixigo.com/flights
+ixigo.otp.wait.seconds=90
+ixigo.skip.login=false
+```
+
+Put your real **10-digit mobile** in Excel (ixigo sends OTP to it).
+
+### Excel columns (`FlightBookingData`)
+
+| Mobile | FromQuery | FromAirport | ToQuery | ToAirport | DepartDate | PassengerName | Email | ExpectedResult |
+|--------|-----------|-------------|---------|-----------|------------|---------------|-------|----------------|
+| 9876543210 | new delhi | New Delhi , Delhi , India | mumbai | Mumbai , Maharashtra , India | skip | Test User | test@example.com | Pass |
+
+Copy airport labels exactly as shown in ixigo autocomplete (comma spacing matters).
+
+### Run in Eclipse
+
+1. Update **Mobile** in `TestData.xlsx` with your number.
+2. Right-click `testng.xml` → **Run As** → **TestNG Suite**.
+3. When the login modal appears, enter the **OTP** on the site within 90 seconds.
+4. Check `reports/ExtentReport.html` and console logs.
+
+### Already logged in?
+
+Set `ixigo.skip.login=true` to skip the login step.
+
+---
+
 ## Week 1 Deliverables Checklist
 - [x] Maven project created with POM (pom.xml)
 - [x] Selenium + TestNG + WebDriverManager configured

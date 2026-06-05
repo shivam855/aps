@@ -1,0 +1,183 @@
+2026-06-05 20:41:08 [INFO ] com.automation.listeners.ExtentTestListener - Initializing Extent Report for suite: Surefire suite
+2026-06-05 20:41:09 [INFO ] com.automation.utils.ExcelUtil - Read 3 rows from sheet: FlightBookingData
+2026-06-05 20:41:09 [INFO ] com.automation.base.BaseTest - === Starting Browser Setup ===
+2026-06-05 20:46:29 [INFO ] com.automation.base.BaseTest - Navigated to: file:/C:/anjaliproject/aps/src/test/resources/mock/flight-booking-mock.html
+2026-06-05 20:46:29 [DEBUG] com.automation.base.BaseTest - Mock mode: true
+2026-06-05 20:46:29 [DEBUG] com.automation.base.BaseTest - Mock API enabled: false
+2026-06-05 20:46:29 [INFO ] com.automation.listeners.ExtentTestListener - Test started: testFlightBookingFlowFromExcel
+2026-06-05 20:46:29 [INFO ] com.automation.tests.IxigoFlightBookingTest - === Flight booking test: Delhi ? Mumbai | User: admin@example.com | Expected: Pass ===
+2026-06-05 20:46:29 [INFO ] com.automation.tests.IxigoFlightBookingTest - Opened flight booking start URL
+2026-06-05 20:46:29 [DEBUG] com.automation.tests.IxigoFlightBookingTest - URL: file:/C:/anjaliproject/aps/src/test/resources/mock/flight-booking-mock.html
+2026-06-05 20:46:29 [INFO ] com.automation.tests.IxigoFlightBookingTest - Step 1: Login
+2026-06-05 20:46:30 [DEBUG] com.automation.pages.BasePage - Typed 'admin@example.com' into element
+2026-06-05 20:46:30 [INFO ] com.automation.pages.BasePage - Entered username: admin@example.com
+2026-06-05 20:46:30 [DEBUG] com.automation.pages.BasePage - Typed 'Admin@123' into element
+2026-06-05 20:46:30 [INFO ] com.automation.pages.BasePage - Entered password
+2026-06-05 20:46:30 [DEBUG] com.automation.pages.BasePage - Clicked element: [[ChromeDriver: chrome on windows (fda4546a23c840621b3d7718b0b08e68)] -> id: loginBtn]
+2026-06-05 20:46:30 [INFO ] com.automation.pages.BasePage - Clicked Login button — mock login API will be called
+2026-06-05 20:46:32 [INFO ] com.automation.tests.IxigoFlightBookingTest - Step 2: Search flights
+2026-06-05 20:46:32 [DEBUG] com.automation.pages.BasePage - Typed 'Delhi' into element
+2026-06-05 20:46:33 [DEBUG] com.automation.pages.BasePage - Typed 'Mumbai' into element
+2026-06-05 20:46:33 [DEBUG] com.automation.pages.BasePage - Typed '2026-06-15' into element
+2026-06-05 20:46:34 [DEBUG] com.automation.pages.BasePage - Clicked element: [[ChromeDriver: chrome on windows (fda4546a23c840621b3d7718b0b08e68)] -> id: searchFlightsBtn]
+2026-06-05 20:46:34 [INFO ] com.automation.pages.BasePage - Submitted mock flight search: Delhi ? Mumbai
+2026-06-05 20:46:34 [INFO ] com.automation.tests.IxigoFlightBookingTest - Step 3: Select flight from results
+2026-06-05 20:46:34 [DEBUG] com.automation.pages.BasePage - Clicked element: [[ChromeDriver: chrome on windows (fda4546a23c840621b3d7718b0b08e68)] -> css selector: .select-flight]
+2026-06-05 20:46:34 [INFO ] com.automation.pages.BasePage - Selected first mock flight
+2026-06-05 20:46:34 [INFO ] com.automation.tests.IxigoFlightBookingTest - Step 4: Enter traveller details
+2026-06-05 20:46:35 [DEBUG] com.automation.pages.BasePage - Typed 'Test User One' into element
+2026-06-05 20:46:35 [DEBUG] com.automation.pages.BasePage - Typed '9876543210' into element
+2026-06-05 20:46:35 [DEBUG] com.automation.pages.BasePage - Typed 'test1@example.com' into element
+2026-06-05 20:46:35 [INFO ] com.automation.pages.BasePage - Filled traveller details for: Test User One
+2026-06-05 20:46:36 [DEBUG] com.automation.pages.BasePage - Clicked element: [[ChromeDriver: chrome on windows (fda4546a23c840621b3d7718b0b08e68)] -> id: continueToPaymentBtn]
+2026-06-05 20:46:36 [INFO ] com.automation.pages.BasePage - Clicked Continue to Payment
+2026-06-05 20:46:36 [INFO ] com.automation.tests.IxigoFlightBookingTest - Step 5: Verify payment screen
+2026-06-05 20:46:56 [INFO ] com.automation.utils.ScreenshotUtil - Screenshot embedded in Extent report (Base64)
+2026-06-05 20:46:56 [ERROR] com.automation.base.BaseTest - [FAIL] Test FAILED: testFlightBookingFlowFromExcel
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (fda4546a23c840621b3d7718b0b08e68)] -> css selector: #payment-screen h1, h1] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shikh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56046}, goog:processID: 8040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56046/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fda4546a23c840621b3d7718b0b08e68
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229) ~[selenium-support-4.15.0.jar:?]
+	at com.automation.pages.BasePage.waitForVisible(BasePage.java:80) ~[classes/:?]
+	at com.automation.pages.BasePage.getText(BasePage.java:60) ~[classes/:?]
+	at com.automation.pages.IxigoPaymentPage.getPaymentHeading(IxigoPaymentPage.java:37) ~[classes/:?]
+	at com.automation.tests.IxigoFlightBookingTest.runSuccessfulBookingFlow(IxigoFlightBookingTest.java:102) ~[test-classes/:?]
+	at com.automation.tests.IxigoFlightBookingTest.testFlightBookingFlowFromExcel(IxigoFlightBookingTest.java:59) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.8.0.jar:7.8.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:848) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestRunner.run(TestRunner.java:621) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1114) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.run(TestNG.java:1082) [testng-7.8.0.jar:7.8.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.1.2.jar:3.1.2]
+2026-06-05 20:46:56 [INFO ] com.automation.base.BaseTest - === Browser Closed ===
+2026-06-05 20:46:56 [INFO ] com.automation.base.BaseTest - === Starting Browser Setup ===
+2026-06-05 20:46:58 [INFO ] com.automation.base.BaseTest - Navigated to: file:/C:/anjaliproject/aps/src/test/resources/mock/flight-booking-mock.html
+2026-06-05 20:46:58 [DEBUG] com.automation.base.BaseTest - Mock mode: true
+2026-06-05 20:46:58 [DEBUG] com.automation.base.BaseTest - Mock API enabled: false
+2026-06-05 20:46:58 [INFO ] com.automation.listeners.ExtentTestListener - Test started: testFlightBookingFlowFromExcel
+2026-06-05 20:46:58 [INFO ] com.automation.tests.IxigoFlightBookingTest - === Flight booking test: Bangalore ? Goa | User: admin@example.com | Expected: Pass ===
+2026-06-05 20:46:58 [INFO ] com.automation.tests.IxigoFlightBookingTest - Opened flight booking start URL
+2026-06-05 20:46:58 [DEBUG] com.automation.tests.IxigoFlightBookingTest - URL: file:/C:/anjaliproject/aps/src/test/resources/mock/flight-booking-mock.html
+2026-06-05 20:46:58 [INFO ] com.automation.tests.IxigoFlightBookingTest - Step 1: Login
+2026-06-05 20:46:58 [DEBUG] com.automation.pages.BasePage - Typed 'admin@example.com' into element
+2026-06-05 20:46:58 [INFO ] com.automation.pages.BasePage - Entered username: admin@example.com
+2026-06-05 20:46:59 [DEBUG] com.automation.pages.BasePage - Typed 'Admin@123' into element
+2026-06-05 20:46:59 [INFO ] com.automation.pages.BasePage - Entered password
+2026-06-05 20:46:59 [DEBUG] com.automation.pages.BasePage - Clicked element: [[ChromeDriver: chrome on windows (46b5b35f3b71073a018296d82469107a)] -> id: loginBtn]
+2026-06-05 20:46:59 [INFO ] com.automation.pages.BasePage - Clicked Login button — mock login API will be called
+2026-06-05 20:47:00 [INFO ] com.automation.tests.IxigoFlightBookingTest - Step 2: Search flights
+2026-06-05 20:47:01 [DEBUG] com.automation.pages.BasePage - Typed 'Bangalore' into element
+2026-06-05 20:47:01 [DEBUG] com.automation.pages.BasePage - Typed 'Goa' into element
+2026-06-05 20:47:01 [DEBUG] com.automation.pages.BasePage - Typed '2026-07-01' into element
+2026-06-05 20:47:02 [DEBUG] com.automation.pages.BasePage - Clicked element: [[ChromeDriver: chrome on windows (46b5b35f3b71073a018296d82469107a)] -> id: searchFlightsBtn]
+2026-06-05 20:47:02 [INFO ] com.automation.pages.BasePage - Submitted mock flight search: Bangalore ? Goa
+2026-06-05 20:47:02 [INFO ] com.automation.tests.IxigoFlightBookingTest - Step 3: Select flight from results
+2026-06-05 20:47:02 [DEBUG] com.automation.pages.BasePage - Clicked element: [[ChromeDriver: chrome on windows (46b5b35f3b71073a018296d82469107a)] -> css selector: .select-flight]
+2026-06-05 20:47:02 [INFO ] com.automation.pages.BasePage - Selected first mock flight
+2026-06-05 20:47:02 [INFO ] com.automation.tests.IxigoFlightBookingTest - Step 4: Enter traveller details
+2026-06-05 20:47:03 [DEBUG] com.automation.pages.BasePage - Typed 'Test User Two' into element
+2026-06-05 20:47:03 [DEBUG] com.automation.pages.BasePage - Typed '9123456780' into element
+2026-06-05 20:47:04 [DEBUG] com.automation.pages.BasePage - Typed 'test2@example.com' into element
+2026-06-05 20:47:04 [INFO ] com.automation.pages.BasePage - Filled traveller details for: Test User Two
+2026-06-05 20:47:04 [DEBUG] com.automation.pages.BasePage - Clicked element: [[ChromeDriver: chrome on windows (46b5b35f3b71073a018296d82469107a)] -> id: continueToPaymentBtn]
+2026-06-05 20:47:04 [INFO ] com.automation.pages.BasePage - Clicked Continue to Payment
+2026-06-05 20:47:04 [INFO ] com.automation.tests.IxigoFlightBookingTest - Step 5: Verify payment screen
+2026-06-05 20:47:24 [INFO ] com.automation.utils.ScreenshotUtil - Screenshot embedded in Extent report (Base64)
+2026-06-05 20:47:24 [ERROR] com.automation.base.BaseTest - [FAIL] Test FAILED: testFlightBookingFlowFromExcel
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (46b5b35f3b71073a018296d82469107a)] -> css selector: #payment-screen h1, h1] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shikh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56912}, goog:processID: 16960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56912/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 46b5b35f3b71073a018296d82469107a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229) ~[selenium-support-4.15.0.jar:?]
+	at com.automation.pages.BasePage.waitForVisible(BasePage.java:80) ~[classes/:?]
+	at com.automation.pages.BasePage.getText(BasePage.java:60) ~[classes/:?]
+	at com.automation.pages.IxigoPaymentPage.getPaymentHeading(IxigoPaymentPage.java:37) ~[classes/:?]
+	at com.automation.tests.IxigoFlightBookingTest.runSuccessfulBookingFlow(IxigoFlightBookingTest.java:102) ~[test-classes/:?]
+	at com.automation.tests.IxigoFlightBookingTest.testFlightBookingFlowFromExcel(IxigoFlightBookingTest.java:59) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.8.0.jar:7.8.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:848) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestRunner.run(TestRunner.java:621) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1114) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.run(TestNG.java:1082) [testng-7.8.0.jar:7.8.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.1.2.jar:3.1.2]
+2026-06-05 20:47:25 [INFO ] com.automation.base.BaseTest - === Browser Closed ===
+2026-06-05 20:47:25 [INFO ] com.automation.base.BaseTest - === Starting Browser Setup ===
+2026-06-05 20:47:26 [INFO ] com.automation.base.BaseTest - Navigated to: file:/C:/anjaliproject/aps/src/test/resources/mock/flight-booking-mock.html
+2026-06-05 20:47:26 [DEBUG] com.automation.base.BaseTest - Mock mode: true
+2026-06-05 20:47:26 [DEBUG] com.automation.base.BaseTest - Mock API enabled: false
+2026-06-05 20:47:26 [INFO ] com.automation.listeners.ExtentTestListener - Test started: testFlightBookingFlowFromExcel
+2026-06-05 20:47:26 [INFO ] com.automation.tests.IxigoFlightBookingTest - === Flight booking test: Delhi ? Mumbai | User: bad@example.com | Expected: Fail ===
+2026-06-05 20:47:26 [INFO ] com.automation.tests.IxigoFlightBookingTest - Opened flight booking start URL
+2026-06-05 20:47:26 [DEBUG] com.automation.tests.IxigoFlightBookingTest - URL: file:/C:/anjaliproject/aps/src/test/resources/mock/flight-booking-mock.html
+2026-06-05 20:47:26 [INFO ] com.automation.tests.IxigoFlightBookingTest - Step 1: Login with invalid credentials (negative case)
+2026-06-05 20:47:27 [DEBUG] com.automation.pages.BasePage - Typed 'bad@example.com' into element
+2026-06-05 20:47:27 [INFO ] com.automation.pages.BasePage - Entered username: bad@example.com
+2026-06-05 20:47:27 [DEBUG] com.automation.pages.BasePage - Typed 'wrongpass' into element
+2026-06-05 20:47:27 [INFO ] com.automation.pages.BasePage - Entered password
+2026-06-05 20:47:27 [DEBUG] com.automation.pages.BasePage - Clicked element: [[ChromeDriver: chrome on windows (3f57094c8fbaead6d9d9c314b177b6ef)] -> id: loginBtn]
+2026-06-05 20:47:27 [INFO ] com.automation.pages.BasePage - Clicked Login button — mock login API will be called
+2026-06-05 20:47:29 [INFO ] com.automation.tests.IxigoFlightBookingTest - === Negative login test PASSED ===
+2026-06-05 20:47:29 [INFO ] com.automation.base.BaseTest - Test PASSED: testFlightBookingFlowFromExcel
+2026-06-05 20:47:30 [INFO ] com.automation.base.BaseTest - === Browser Closed ===
+2026-06-05 20:47:30 [INFO ] com.automation.listeners.ExtentTestListener - Flushing Extent Report

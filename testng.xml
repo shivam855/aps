@@ -8,12 +8,21 @@
 -->
 <suite name="Automation Test Suite" verbose="1" parallel="none">
 
+    <!-- Week 3 — ixigo flight booking (login → payment), data-driven from Excel -->
+    <test name="Ixigo Flight Booking Tests">
+        <classes>
+            <class name="com.automation.tests.IxigoFlightBookingTest"/>
+        </classes>
+    </test>
+
     <!-- Ixigo train search — Selenium port of Playwright flow -->
+    <!--
     <test name="Ixigo Train Search Tests">
         <classes>
             <class name="com.automation.tests.IxigoTrainSearchTest"/>
         </classes>
     </test>
+    -->
 
     <!-- Mock page + mock API sample tests -->
     <!--

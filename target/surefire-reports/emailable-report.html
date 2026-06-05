@@ -9,10 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">14,648</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">381,503</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automation.tests.IxigoTrainSearchTest</td><td><a href="#m0">testDelhiToKanpurTrainSearch</a></td><td rowspan="1">1780160266391</td><td rowspan="1">6490</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.automation.tests.IxigoFlightBookingTest</td><td><a href="#m0">testFlightBookingFlowFromExcel</a></td><td rowspan="2">1780672618429</td><td rowspan="2">26332</td></tr><tr class="failedeven"><td><a href="#m1">testFlightBookingFlowFromExcel</a></td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automation.tests.IxigoFlightBookingTest</td><td><a href="#m2">testFlightBookingFlowFromExcel</a></td><td rowspan="1">1780672646809</td><td rowspan="1">2639</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.automation.tests.IxigoTrainSearchTest#testDelhiToKanpurTrainSearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">com.automation.tests.IxigoFlightBookingTest#testFlightBookingFlowFromExcel</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Email=test2@example.com, ExpectedResult=Pass, Username=admin@example.com, ToCity=Goa, Travellers=2, PassengerName=Test User Two, FromCity=Bangalore, Mobile=9123456780, Password=Admin@123, DepartDate=2026-07-01}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (46b5b35f3b71073a018296d82469107a)] -&gt; css selector: #payment-screen h1, h1] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shikh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56912}, goog:processID: 16960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56912/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 46b5b35f3b71073a018296d82469107a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.automation.pages.BasePage.waitForVisible(BasePage.java:80)
+	at com.automation.pages.BasePage.getText(BasePage.java:60)
+	at com.automation.pages.IxigoPaymentPage.getPaymentHeading(IxigoPaymentPage.java:37)
+	at com.automation.tests.IxigoFlightBookingTest.runSuccessfulBookingFlow(IxigoFlightBookingTest.java:102)
+	at com.automation.tests.IxigoFlightBookingTest.testFlightBookingFlowFromExcel(IxigoFlightBookingTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.automation.tests.IxigoFlightBookingTest#testFlightBookingFlowFromExcel</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Email=test1@example.com, ExpectedResult=Pass, Username=admin@example.com, ToCity=Mumbai, Travellers=1, PassengerName=Test User One, FromCity=Delhi, Mobile=9876543210, Password=Admin@123, DepartDate=2026-06-15}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (fda4546a23c840621b3d7718b0b08e68)] -&gt; css selector: #payment-screen h1, h1] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shikh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56046}, goog:processID: 8040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56046/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fda4546a23c840621b3d7718b0b08e68
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.automation.pages.BasePage.waitForVisible(BasePage.java:80)
+	at com.automation.pages.BasePage.getText(BasePage.java:60)
+	at com.automation.pages.IxigoPaymentPage.getPaymentHeading(IxigoPaymentPage.java:37)
+	at com.automation.tests.IxigoFlightBookingTest.runSuccessfulBookingFlow(IxigoFlightBookingTest.java:102)
+	at com.automation.tests.IxigoFlightBookingTest.testFlightBookingFlowFromExcel(IxigoFlightBookingTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.automation.tests.IxigoFlightBookingTest#testFlightBookingFlowFromExcel</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Email=bad@example.com, ExpectedResult=Fail, Username=bad@example.com, ToCity=Mumbai, Travellers=1, PassengerName=N/A, FromCity=Delhi, Mobile=0000000000, Password=wrongpass, DepartDate=skip}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
