@@ -136,7 +136,6 @@ public class HomeTest extends BaseTest {
 ### Config (`config.properties`)
 
 ```properties
-use.mock.page=false
 flights.url=https://www.ixigo.com/flights
 ixigo.otp.wait.seconds=90
 ixigo.skip.login=false

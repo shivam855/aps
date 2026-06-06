@@ -1,6 +1,5 @@
 package com.automation.config;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -45,9 +44,6 @@ public class ConfigReader {
     public static String getBaseUrl()          { return getProperty("base.url"); }
     public static String getTrainsUrl()        { return getProperty("trains.url", getBaseUrl()); }
     public static String getFlightsUrl()       { return getProperty("flights.url", "https://www.ixigo.com/flights"); }
-    public static String getFlightMockPagePath() {
-        return getProperty("mock.flight.page.path", "src/test/resources/mock/flight-booking-mock.html");
-    }
     public static int    getIxigoOtpWaitSeconds() { return Integer.parseInt(getProperty("ixigo.otp.wait.seconds", "90")); }
     public static boolean isSkipLogin()          { return Boolean.parseBoolean(getProperty("ixigo.skip.login", "false")); }
     public static String getIxigoOriginQuery() { return getProperty("ixigo.origin.query"); }
@@ -65,37 +61,11 @@ public class ConfigReader {
     public static String getScreenshotPath()   { return getProperty("screenshot.path"); }
     public static String getReportPath()       { return getProperty("report.path"); }
     public static boolean isScreenshotOnFail() { return Boolean.parseBoolean(getProperty("screenshot.on.failure")); }
-    public static boolean useMockPage()        { return Boolean.parseBoolean(getProperty("use.mock.page")); }
     public static String getLogLevel()         { return getProperty("log.level"); }
-    public static boolean isMockApiEnabled()   { return Boolean.parseBoolean(getProperty("mock.api.enabled")); }
-    public static int    getMockApiPort()      { return Integer.parseInt(getProperty("mock.api.port")); }
-    public static String getMockApiBaseUrl()   { return getProperty("mock.api.base.url"); }
 
-    /** Resolves mock HTML file to a file:// URL for Selenium navigation */
-    public static String getMockPageUrl() {
-        String path = getProperty("mock.page.path");
-        File mockFile = new File(path);
-        if (!mockFile.exists()) {
-            throw new RuntimeException("Mock page not found at: " + mockFile.getAbsolutePath());
-        }
-        return mockFile.toURI().toString();
-    }
+    /** URL used at test startup — always use base URL (mock removed) */
+    public static String getStartUrl() { return getBaseUrl(); }
 
-    /** URL used at test startup — mock page or live base URL */
-    public static String getStartUrl() {
-        return useMockPage() ? getMockPageUrl() : getBaseUrl();
-    }
-
-    /** Week 3 flight booking — mock HTML or live ixigo flights */
-    public static String getFlightBookingStartUrl() {
-        if (useMockPage()) {
-            String path = getFlightMockPagePath();
-            File mockFile = new File(path);
-            if (!mockFile.exists()) {
-                throw new RuntimeException("Flight mock page not found at: " + mockFile.getAbsolutePath());
-            }
-            return mockFile.toURI().toString();
-        }
-        return getFlightsUrl();
-    }
+    /** Flight booking start URL — always use live flights URL (mock removed) */
+    public static String getFlightBookingStartUrl() { return getFlightsUrl(); }
 }

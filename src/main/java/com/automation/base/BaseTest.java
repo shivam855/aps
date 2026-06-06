@@ -1,7 +1,6 @@
 package com.automation.base;
 
 import com.automation.config.ConfigReader;
-import com.automation.mock.BrowserApiMock;
 import com.automation.reporting.ExtentReportManager;
 import com.automation.utils.LoggerUtil;
 import com.aventstack.extentreports.ExtentTest;
@@ -15,7 +14,7 @@ import org.testng.annotations.Listeners;
  * BaseTest - Parent class for all test classes.
  * Handles browser setup, teardown, failure screenshots, and framework logging.
  */
-@Listeners({com.automation.listeners.ExtentTestListener.class, com.automation.listeners.MockApiListener.class})
+@Listeners({com.automation.listeners.ExtentTestListener.class})
 public class BaseTest {
 
     protected static final LoggerUtil log = LoggerUtil.getLogger(BaseTest.class);
@@ -24,13 +23,10 @@ public class BaseTest {
     public void setUp() {
         log.info("=== Starting Browser Setup ===");
         DriverManager.initDriver();
-        BrowserApiMock.enableIfConfigured();
         WebDriver driver = DriverManager.getDriver();
         String startUrl = ConfigReader.getStartUrl();
         driver.get(startUrl);
         log.info("Navigated to: " + startUrl);
-        log.debug("Mock mode: " + ConfigReader.useMockPage());
-        log.debug("Mock API enabled: " + ConfigReader.isMockApiEnabled());
     }
 
     @AfterMethod(alwaysRun = true)

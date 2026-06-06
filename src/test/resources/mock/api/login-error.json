@@ -1,5 +1,0 @@
-{
-  "success": false,
-  "message": "Invalid username or password",
-  "errorCode": "AUTH_401"
-}

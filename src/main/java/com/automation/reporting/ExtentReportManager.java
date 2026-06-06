@@ -44,7 +44,7 @@ public class ExtentReportManager {
         extentReports.setSystemInfo("OS", System.getProperty("os.name"));
         extentReports.setSystemInfo("Java", System.getProperty("java.version"));
         extentReports.setSystemInfo("Browser", ConfigReader.getBrowser());
-        extentReports.setSystemInfo("Environment", ConfigReader.useMockPage() ? "Mock (Local HTML)" : "Live");
+        extentReports.setSystemInfo("Environment", ConfigReader.getBaseUrl());
     }
 
     public static void createTest(String testName, String description) {

@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -99,4 +100,45 @@ public class BasePage {
     protected String getCurrentUrl() {
         return driver.getCurrentUrl();
     }
+    /**
+	 * Wait for specific ExpectedCondition for the given amount of time in seconds
+	 */
+	@SuppressWarnings("unchecked")
+	private void waitFor(@SuppressWarnings("rawtypes") ExpectedCondition condition, Integer timeOutInSeconds) {
+		timeOutInSeconds = timeOutInSeconds != null ? timeOutInSeconds : 30;
+		wait = new WebDriverWait(driver, Duration.ofSeconds(ConfigReader.getExplicitWait()));
+		wait.until(condition);
+	}
+
+
+	/**
+	 * Wait for given number of seconds for element with given locator to be visible
+	 * on the page
+	 */
+    protected void waitForVisibilityOf(By locator, Integer... timeOutInSeconds) {
+		int attempts = 0;
+		while (attempts < 2) {
+			try {
+				waitFor(ExpectedConditions.visibilityOfElementLocated(locator),
+						(timeOutInSeconds.length > 0 ? timeOutInSeconds[0] : null));
+				break;
+			} catch (Exception e) {
+			}
+			attempts++;
+		}
+	}
+
+
+	protected void waitForInvisibilityOf(By locator, Integer... timeOutInSeconds) {
+		int attempts = 0;
+		while (attempts < 2) {
+			try {
+				waitFor(ExpectedConditions.invisibilityOfElementLocated(locator),
+						(timeOutInSeconds.length > 0 ? timeOutInSeconds[0] : null));
+				break;
+			} catch (Exception e) {
+			}
+			attempts++;
+		}
+	}
 }
