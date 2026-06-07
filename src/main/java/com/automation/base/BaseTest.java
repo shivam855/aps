@@ -62,7 +62,7 @@ public class BaseTest {
             }
         } finally {
             ExtentReportManager.removeTest();
-            DriverManager.quitDriver();
+           // DriverManager.quitDriver();
             log.info("=== Browser Closed ===");
         }
     }

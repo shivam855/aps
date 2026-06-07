@@ -95,11 +95,7 @@
 			<version>3.3</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.herokuapp.test</groupId>
-			<artifactId>expedia-price-search</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+
     </dependencies>
 
     <build>
