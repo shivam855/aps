@@ -11,7 +11,7 @@
     <!-- Week 3 — ixigo flight booking (login → payment), data-driven from Excel -->
     <test name="Ixigo Flight Booking Tests">
         <classes>
-            <class name="com.automation.tests.ExpediaPriceCheck"/>
+            <class name="com.automation.tests.IxigoFlightBookingTest"/>
         </classes>
     </test>
 

@@ -1,202 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-05T20:41:08 IST" name="Surefire suite" finished-at="2026-06-05T20:47:30 IST" duration-ms="381503">
+  <suite started-at="2026-06-08T21:37:11 IST" name="Automation Test Suite" finished-at="2026-06-08T21:38:38 IST" duration-ms="87247">
     <groups>
     </groups>
-    <test started-at="2026-06-05T20:41:08 IST" name="Surefire test" finished-at="2026-06-05T20:47:30 IST" duration-ms="381503">
+    <test started-at="2026-06-08T21:37:11 IST" name="Ixigo Flight Booking Tests" finished-at="2026-06-08T21:38:38 IST" duration-ms="87247">
       <class name="com.automation.tests.IxigoFlightBookingTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@7e3181aa]" started-at="2026-06-05T20:41:09 IST" name="setUp" finished-at="2026-06-05T20:46:29 IST" duration-ms="319477" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@635572a7]" started-at="2026-06-08T21:37:12 IST" name="setUp" finished-at="2026-06-08T21:37:34 IST" duration-ms="22722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFlightBookingFlowFromExcel(java.util.Map)[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@7e3181aa]" started-at="2026-06-05T20:46:29 IST" name="testFlightBookingFlowFromExcel" description="Data-driven flight booking from login through payment screen" data-provider="flightBookingData" finished-at="2026-06-05T20:46:56 IST" duration-ms="27102" status="FAIL">
+        <test-method signature="testIxigoFlow(java.util.Map)[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@635572a7]" started-at="2026-06-08T21:37:34 IST" name="testIxigoFlow" description="Search flights on Ixigo and complete till payment with credit card" data-provider="flightBookingData" finished-at="2026-06-08T21:38:38 IST" duration-ms="63415" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Email=test1@example.com, ExpectedResult=Pass, Username=admin@example.com, ToCity=Mumbai, Travellers=1, PassengerName=Test User One, FromCity=Delhi, Mobile=9876543210, Password=Admin@123, DepartDate=2026-06-15}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (fda4546a23c840621b3d7718b0b08e68)] -> css selector: #payment-screen h1, h1] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shikh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56046}, goog:processID: 8040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56046/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fda4546a23c840621b3d7718b0b08e68]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (fda4546a23c840621b3d7718b0b08e68)] -> css selector: #payment-screen h1, h1] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shikh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56046}, goog:processID: 8040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56046/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fda4546a23c840621b3d7718b0b08e68
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at com.automation.pages.BasePage.waitForVisible(BasePage.java:80)
-at com.automation.pages.BasePage.getText(BasePage.java:60)
-at com.automation.pages.IxigoPaymentPage.getPaymentHeading(IxigoPaymentPage.java:37)
-at com.automation.tests.IxigoFlightBookingTest.runSuccessfulBookingFlow(IxigoFlightBookingTest.java:102)
-at com.automation.tests.IxigoFlightBookingTest.testFlightBookingFlowFromExcel(IxigoFlightBookingTest.java:59)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFlightBookingFlowFromExcel -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@7e3181aa]" started-at="2026-06-05T20:46:56 IST" name="tearDown" finished-at="2026-06-05T20:46:56 IST" duration-ms="474" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testFlightBookingFlowFromExcel status=FAILURE method=IxigoFlightBookingTest.testFlightBookingFlowFromExcel(java.util.Map)[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@7e3181aa] output={null}]]]>
+                <![CDATA[{lastName=Automation, firstName=Test User One, cvv=123, ToCity=Kolkata, FromCity=New Delhi, exp=12/30, Mobile=9667525275, cardNumber=4111111111111111, DepartDate=2026-06-15}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@7e3181aa]" started-at="2026-06-05T20:46:56 IST" name="setUp" finished-at="2026-06-05T20:46:58 IST" duration-ms="1475" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testFlightBookingFlowFromExcel(java.util.Map)[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@7e3181aa]" started-at="2026-06-05T20:46:58 IST" name="testFlightBookingFlowFromExcel" description="Data-driven flight booking from login through payment screen" data-provider="flightBookingData" finished-at="2026-06-05T20:47:24 IST" duration-ms="26332" status="FAIL">
+        </test-method> <!-- testIxigoFlow -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@635572a7]" started-at="2026-06-08T21:38:38 IST" name="tearDown" finished-at="2026-06-08T21:38:38 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Email=test2@example.com, ExpectedResult=Pass, Username=admin@example.com, ToCity=Goa, Travellers=2, PassengerName=Test User Two, FromCity=Bangalore, Mobile=9123456780, Password=Admin@123, DepartDate=2026-07-01}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (46b5b35f3b71073a018296d82469107a)] -> css selector: #payment-screen h1, h1] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shikh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56912}, goog:processID: 16960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56912/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 46b5b35f3b71073a018296d82469107a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (46b5b35f3b71073a018296d82469107a)] -> css selector: #payment-screen h1, h1] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shikh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56912}, goog:processID: 16960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56912/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 46b5b35f3b71073a018296d82469107a
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at com.automation.pages.BasePage.waitForVisible(BasePage.java:80)
-at com.automation.pages.BasePage.getText(BasePage.java:60)
-at com.automation.pages.IxigoPaymentPage.getPaymentHeading(IxigoPaymentPage.java:37)
-at com.automation.tests.IxigoFlightBookingTest.runSuccessfulBookingFlow(IxigoFlightBookingTest.java:102)
-at com.automation.tests.IxigoFlightBookingTest.testFlightBookingFlowFromExcel(IxigoFlightBookingTest.java:59)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFlightBookingFlowFromExcel -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@7e3181aa]" started-at="2026-06-05T20:47:24 IST" name="tearDown" finished-at="2026-06-05T20:47:25 IST" duration-ms="467" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testFlightBookingFlowFromExcel status=FAILURE method=IxigoFlightBookingTest.testFlightBookingFlowFromExcel(java.util.Map)[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@7e3181aa] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@7e3181aa]" started-at="2026-06-05T20:47:25 IST" name="setUp" finished-at="2026-06-05T20:47:26 IST" duration-ms="1574" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testFlightBookingFlowFromExcel(java.util.Map)[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@7e3181aa]" started-at="2026-06-05T20:47:26 IST" name="testFlightBookingFlowFromExcel" description="Data-driven flight booking from login through payment screen" data-provider="flightBookingData" finished-at="2026-06-05T20:47:29 IST" duration-ms="2639" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Email=bad@example.com, ExpectedResult=Fail, Username=bad@example.com, ToCity=Mumbai, Travellers=1, PassengerName=N/A, FromCity=Delhi, Mobile=0000000000, Password=wrongpass, DepartDate=skip}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFlightBookingFlowFromExcel -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@7e3181aa]" started-at="2026-06-05T20:47:29 IST" name="tearDown" finished-at="2026-06-05T20:47:30 IST" duration-ms="589" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testFlightBookingFlowFromExcel status=SUCCESS method=IxigoFlightBookingTest.testFlightBookingFlowFromExcel(java.util.Map)[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@7e3181aa] output={null}]]]>
+                <![CDATA[[TestResult name=testIxigoFlow status=SUCCESS method=IxigoFlightBookingTest.testIxigoFlow(java.util.Map)[pri:0, instance:com.automation.tests.IxigoFlightBookingTest@635572a7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -204,6 +34,6 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.tests.IxigoFlightBookingTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Ixigo Flight Booking Tests -->
+  </suite> <!-- Automation Test Suite -->
 </testng-results>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="42.056" tests="8" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="89.715" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
-    <property name="webdriver.chrome.driver" value="C:\Users\HP\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\shikh\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\HP\OneDrive\Desktop\aps\automation-framework\target\test-classes;C:\Users\HP\OneDrive\Desktop\aps\automation-framework\target\classes;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\HP\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\HP\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\HP\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\HP\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\HP\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\HP\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\HP\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\HP\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\HP\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\HP\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\HP\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\HP\.m2\repository\org\slf4j\slf4j-api\2.0.10\slf4j-api-2.0.10.jar;C:\Users\HP\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\HP\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\HP\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\HP\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\HP\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\HP\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\HP\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\HP\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\HP\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\HP\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\HP\.m2\repository\org\apache\poi\poi\5.2.4\poi-5.2.4.jar;C:\Users\HP\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\HP\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\HP\.m2\repository\org\apache\poi\poi-ooxml\5.2.4\poi-ooxml-5.2.4.jar;C:\Users\HP\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.4\poi-ooxml-lite-5.2.4.jar;C:\Users\HP\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\HP\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\HP\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-core\2.21.1\log4j-core-2.21.1.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\HP\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\HP\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\HP\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\HP\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\HP\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;"/>
+    <property name="java.class.path" value="C:\aps\target\test-classes;C:\aps\target\classes;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\shikh\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\shikh\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\shikh\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\shikh\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\shikh\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\shikh\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\shikh\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\shikh\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\shikh\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\shikh\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\shikh\.m2\repository\org\slf4j\slf4j-api\2.0.10\slf4j-api-2.0.10.jar;C:\Users\shikh\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\shikh\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\shikh\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\shikh\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\shikh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\shikh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\shikh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\shikh\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\shikh\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\shikh\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\shikh\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\shikh\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\shikh\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\shikh\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\shikh\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\shikh\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\shikh\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\shikh\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\shikh\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\shikh\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\shikh\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\shikh\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\shikh\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\shikh\.m2\repository\org\apache\poi\poi\5.2.4\poi-5.2.4.jar;C:\Users\shikh\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\shikh\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\shikh\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\shikh\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\shikh\.m2\repository\org\apache\poi\poi-ooxml\5.2.4\poi-ooxml-5.2.4.jar;C:\Users\shikh\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.4\poi-ooxml-lite-5.2.4.jar;C:\Users\shikh\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\shikh\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\shikh\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\shikh\.m2\repository\org\apache\logging\log4j\log4j-core\2.21.1\log4j-core-2.21.1.jar;C:\Users\shikh\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\shikh\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\shikh\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\shikh\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\shikh\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\shikh\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\shikh\.m2\repository\com\opencsv\opencsv\3.3\opencsv-3.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -14,337 +14,66 @@
     <property name="os.name" value="Windows 11"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="US"/>
+    <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\HP\AppData\Local\Temp\surefire1503129874451515633\surefirebooter-20260530220343613_3.jar C:\Users\HP\AppData\Local\Temp\surefire1503129874451515633 2026-05-30T22-03-43_296-jvmRun1 surefire-20260530220343613_1tmp surefire_0-20260530220343613_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\shikh\AppData\Local\Temp\surefire5820558451652234454\surefirebooter-20260608213709048_3.jar C:\Users\shikh\AppData\Local\Temp\surefire5820558451652234454 2026-06-08T21-37-08_570-jvmRun1 surefire-20260608213709048_1tmp surefire_0-20260608213709048_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\HP\OneDrive\Desktop\aps\automation-framework\target\test-classes;C:\Users\HP\OneDrive\Desktop\aps\automation-framework\target\classes;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\HP\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\HP\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\HP\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\HP\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\HP\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\HP\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\HP\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\HP\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\HP\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\HP\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\HP\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\HP\.m2\repository\org\slf4j\slf4j-api\2.0.10\slf4j-api-2.0.10.jar;C:\Users\HP\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\HP\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\HP\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\HP\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\HP\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\HP\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\HP\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\HP\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\HP\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\HP\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\HP\.m2\repository\org\apache\poi\poi\5.2.4\poi-5.2.4.jar;C:\Users\HP\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\HP\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\HP\.m2\repository\org\apache\poi\poi-ooxml\5.2.4\poi-ooxml-5.2.4.jar;C:\Users\HP\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.4\poi-ooxml-lite-5.2.4.jar;C:\Users\HP\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\HP\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\HP\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-core\2.21.1\log4j-core-2.21.1.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\HP\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\HP\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\HP\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\HP\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\HP\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;"/>
+    <property name="surefire.test.class.path" value="C:\aps\target\test-classes;C:\aps\target\classes;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\shikh\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\shikh\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\shikh\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\shikh\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\shikh\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\shikh\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\shikh\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\shikh\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\shikh\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\shikh\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\shikh\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\shikh\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\shikh\.m2\repository\org\slf4j\slf4j-api\2.0.10\slf4j-api-2.0.10.jar;C:\Users\shikh\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\shikh\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\shikh\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\shikh\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\shikh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\shikh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\shikh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\shikh\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\shikh\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\shikh\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\shikh\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\shikh\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\shikh\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\shikh\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\shikh\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\shikh\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\shikh\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\shikh\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\shikh\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\shikh\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\shikh\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\shikh\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\shikh\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\shikh\.m2\repository\org\apache\poi\poi\5.2.4\poi-5.2.4.jar;C:\Users\shikh\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\shikh\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\shikh\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\shikh\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\shikh\.m2\repository\org\apache\poi\poi-ooxml\5.2.4\poi-ooxml-5.2.4.jar;C:\Users\shikh\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.4\poi-ooxml-lite-5.2.4.jar;C:\Users\shikh\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\shikh\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\shikh\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\shikh\.m2\repository\org\apache\logging\log4j\log4j-core\2.21.1\log4j-core-2.21.1.jar;C:\Users\shikh\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\shikh\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\shikh\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\shikh\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\shikh\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\shikh\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\shikh\.m2\repository\com\opencsv\opencsv\3.3\opencsv-3.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\HP"/>
+    <property name="user.home" value="C:\Users\shikh"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.version.date" value="2025-10-21"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\HP\OneDrive\Desktop\aps\automation-framework"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="basedir" value="C:\aps"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\HP\AppData\Local\Temp\surefire1503129874451515633\surefirebooter-20260530220343613_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\shikh\AppData\Local\Temp\surefire5820558451652234454\surefirebooter-20260608213709048_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
-    <property name="user.name" value="HP"/>
+    <property name="java.runtime.version" value="17.0.17+8-LTS-360"/>
+    <property name="user.name" value="shikh"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\HP\.m2\repository"/>
+    <property name="localRepository" value="C:\Users\shikh\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\HP\AppData\Local\Temp\"/>
-    <property name="java.version" value="17.0.12"/>
-    <property name="user.dir" value="C:\Users\HP\OneDrive\Desktop\aps\automation-framework"/>
+    <property name="java.io.tmpdir" value="C:\Users\shikh\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.17"/>
+    <property name="user.dir" value="C:\aps"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\HP\AppData\Local\Programs\cursor\resources\app\resources\helpers;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python313\Scripts\;C:\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\HP\AppData\Local\Microsoft\WindowsApps;C:\Users\HP\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\HP\AppData\Roaming\npm;C:\Users\HP\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Apache\Maven\apache-maven-3.9.11\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python313\Scripts\;C:\Python313\;C:\Users\shikh\AppData\Local\Programs\Python\Python311;C:\Users\shikh\AppData\Local\Programs\Python\Python311\Scripts;C:\Program Files\Tesseract-OCR;C:\Program Files\MySQL\MySQL Server 8.2\bin;C:\Users\shikh\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.13;C:\Program Files\Java\jdk-17\bin;C:\Program Files\MongoDB\Server\7.0\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\MongoDB\mongosh-2.1.1-win32-x64\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files (x86)\scala\bin;C:\Users\shikh\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\shikh\AppData\Local\Programs\Python\Python311\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\shikh\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2023.2\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.3\bin;;C:\Users\shikh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\shikh\AppData\Local\Programs\mongosh\;C:\Users\shikh\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\shikh\AppData\Roaming\npm;C:\Program Files\Apache\apache-maven-3.9.12\bin;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="java.vm.version" value="17.0.17+8-LTS-360"/>
+    <property name="java.specification.maintenance.version" value="1"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testMockLoginFailure" classname="com.automation.tests.SampleAutomationTest" time="2.462">
-    <system-out><![CDATA[22:03:46 [INFO ] ExtentTestListener - Initializing Extent Report for suite: Automation Test Suite
-22:03:46 [INFO ] MockApiListener - Starting mock API server for suite: Automation Test Suite
-22:03:47 [INFO ] MockApiServer - Mock API server started at http://127.0.0.1:9090
-22:03:47 [INFO ] BaseTest - === Starting Browser Setup ===
-22:03:50 [INFO ] BrowserApiMock - Browser API mock interceptor injected (real APIs will route to mock server)
-22:03:50 [INFO ] BaseTest - Navigated to: file:/C:/Users/HP/OneDrive/Desktop/aps/automation-framework/src/test/resources/mock/login.html
-22:03:50 [DEBUG] BaseTest - Mock mode: true
-22:03:50 [DEBUG] BaseTest - Mock API enabled: true
-22:03:50 [INFO ] ExtentTestListener - Test started: testMockLoginFailure
-22:03:50 [INFO ] SampleAutomationTest - === Negative Login Test Started ===
-22:03:50 [INFO ] SampleAutomationTest - Step 1: Login with invalid credentials via mock API
-22:03:51 [DEBUG] BasePage - Typed 'wrong@example.com' into element
-22:03:51 [INFO ] BasePage - Entered username: wrong@example.com
-22:03:51 [DEBUG] BasePage - Typed 'wrongpass' into element
-22:03:51 [INFO ] BasePage - Entered password
-22:03:51 [DEBUG] BasePage - Clicked element: [[ChromeDriver: chrome on windows (c1e7f5c55504a418b017a8b9158acd45)] -> id: loginBtn]
-22:03:51 [INFO ] BasePage - Clicked Login button — mock login API will be called
-22:03:51 [INFO ] MockApiServer - Mock API hit: POST /mock/api/v1/auth/login
-22:03:53 [INFO ] SampleAutomationTest - Step 2: Verify error message is displayed
-22:03:53 [INFO ] SampleAutomationTest - === Negative Login Test PASSED ===
+  <testcase name="testIxigoFlow[{lastName=Automation, firstName=Test User One, cvv=123, ToCity=Kolkata, FromCity=New Delhi, exp=12/30, Mobile=9667525275, cardNumber=4111111111111111, DepartDate=2026-06-15}](1)" classname="com.automation.tests.IxigoFlightBookingTest" time="63.392">
+    <system-out><![CDATA[21:37:10 [INFO ] ExtentTestListener - Initializing Extent Report for suite: Automation Test Suite
+21:37:12 [INFO ] ExcelUtil - Read 1 rows from sheet: FlightBookingData
+21:37:12 [INFO ] BaseTest - === Starting Browser Setup ===
+21:37:34 [INFO ] BaseTest - Navigated to: https://www.ixigo.com/
+21:37:34 [INFO ] ExtentTestListener - Test started: testIxigoFlow
+21:37:34 [INFO ] BaseTest - Starting: IxigoFlightBookingTest
+21:38:38 [INFO ] IxigoFlightBookingTest - === Live ixigo Flight Booking Test PASSED ===
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-May 30, 2026 10:03:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 08, 2026 9:37:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-May 30, 2026 10:03:50 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.216. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testMockLoginSuccess" classname="com.automation.tests.SampleAutomationTest" time="2.672">
-    <system-out><![CDATA[22:03:53 [INFO ] BaseTest - Test PASSED: testMockLoginFailure
-22:03:53 [INFO ] BaseTest - === Browser Closed ===
-22:03:53 [INFO ] BaseTest - === Starting Browser Setup ===
-22:03:54 [INFO ] BrowserApiMock - Browser API mock interceptor injected (real APIs will route to mock server)
-22:03:55 [INFO ] BaseTest - Navigated to: file:/C:/Users/HP/OneDrive/Desktop/aps/automation-framework/src/test/resources/mock/login.html
-22:03:55 [DEBUG] BaseTest - Mock mode: true
-22:03:55 [DEBUG] BaseTest - Mock API enabled: true
-22:03:55 [INFO ] ExtentTestListener - Test started: testMockLoginSuccess
-22:03:55 [INFO ] SampleAutomationTest - === Sample Automation Test Started ===
-22:03:55 [DEBUG] SampleAutomationTest - Mock page URL: file:/C:/Users/HP/OneDrive/Desktop/aps/automation-framework/src/test/resources/mock/login.html
-22:03:55 [DEBUG] SampleAutomationTest - Mock API base URL: http://127.0.0.1:9090
-22:03:55 [INFO ] SampleAutomationTest - Step 1: Open mock login page
-22:03:55 [DEBUG] SampleAutomationTest - Page title: Ixigo Trains - Mock Login
-22:03:55 [INFO ] SampleAutomationTest - Step 2: Login — triggers mock auth API (not real ixigo API)
-22:03:55 [DEBUG] BasePage - Typed 'admin@example.com' into element
-22:03:55 [INFO ] BasePage - Entered username: admin@example.com
-22:03:55 [DEBUG] BasePage - Typed 'Admin@123' into element
-22:03:55 [INFO ] BasePage - Entered password
-22:03:55 [INFO ] MockApiServer - Mock API hit: POST /mock/api/v1/auth/login
-22:03:55 [INFO ] MockApiServer - Mock API hit: GET /mock/api/v1/dashboard
-22:03:55 [INFO ] MockApiServer - Mock API hit: GET /mock/api/v1/trains/search?sourceStationCode=NDLS&destinationStationCode=LTT&dateOfJourney=02-06-2026&addAvailabilityCache=true&sortBy=DEFAULT
-22:03:55 [DEBUG] BasePage - Clicked element: [[ChromeDriver: chrome on windows (07c6fac12e4d481507d023e33b261e80)] -> id: loginBtn]
-22:03:55 [INFO ] BasePage - Clicked Login button — mock login API will be called
-22:03:57 [INFO ] SampleAutomationTest - Step 3: Verify dashboard loaded from mock APIs
-22:03:57 [INFO ] SampleAutomationTest - === Sample Automation Test PASSED ===
-]]></system-out>
-    <system-err><![CDATA[May 30, 2026 10:03:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 30, 2026 10:03:54 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.216. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testLoginWithExcelData[{ExpectedResult=Pass, Username=admin@example.com, Password=Admin@123}](1)" classname="com.automation.tests.LoginTest" time="2.462">
-    <system-out><![CDATA[22:03:57 [INFO ] BaseTest - Test PASSED: testMockLoginSuccess
-22:03:58 [INFO ] BaseTest - === Browser Closed ===
-22:03:59 [INFO ] ExcelUtil - Read 5 rows from sheet: LoginData
-22:03:59 [INFO ] BaseTest - === Starting Browser Setup ===
-22:04:01 [INFO ] BrowserApiMock - Browser API mock interceptor injected (real APIs will route to mock server)
-22:04:01 [INFO ] BaseTest - Navigated to: file:/C:/Users/HP/OneDrive/Desktop/aps/automation-framework/src/test/resources/mock/login.html
-22:04:01 [DEBUG] BaseTest - Mock mode: true
-22:04:01 [DEBUG] BaseTest - Mock API enabled: true
-22:04:01 [INFO ] ExtentTestListener - Test started: testLoginWithExcelData
-22:04:01 [INFO ] BaseTest - Testing login for: admin@example.com | Expected: Pass
-22:04:01 [DEBUG] BasePage - Typed 'admin@example.com' into element
-22:04:01 [INFO ] BasePage - Entered username: admin@example.com
-22:04:02 [DEBUG] BasePage - Typed 'Admin@123' into element
-22:04:02 [INFO ] BasePage - Entered password
-22:04:02 [INFO ] MockApiServer - Mock API hit: POST /mock/api/v1/auth/login
-22:04:02 [INFO ] MockApiServer - Mock API hit: GET /mock/api/v1/dashboard
-22:04:02 [INFO ] MockApiServer - Mock API hit: GET /mock/api/v1/trains/search?sourceStationCode=NDLS&destinationStationCode=LTT&dateOfJourney=02-06-2026&addAvailabilityCache=true&sortBy=DEFAULT
-22:04:02 [DEBUG] BasePage - Clicked element: [[ChromeDriver: chrome on windows (c80f6d0f975be5981946ad2af6bd5430)] -> id: loginBtn]
-22:04:02 [INFO ] BasePage - Clicked Login button — mock login API will be called
-]]></system-out>
-    <system-err><![CDATA[May 30, 2026 10:04:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 30, 2026 10:04:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.216. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testLoginWithExcelData[{ExpectedResult=Pass, Username=user@example.com, Password=User@456}](2)" classname="com.automation.tests.LoginTest" time="2.506">
-    <failure message="Login should have succeeded for: user@example.com expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Login should have succeeded for: user@example.com expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.automation.tests.LoginTest.testLoginWithExcelData(LoginTest.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[22:04:03 [INFO ] BaseTest - Test PASSED: testLoginWithExcelData
-22:04:04 [INFO ] BaseTest - === Browser Closed ===
-22:04:04 [INFO ] BaseTest - === Starting Browser Setup ===
-22:04:05 [INFO ] BrowserApiMock - Browser API mock interceptor injected (real APIs will route to mock server)
-22:04:05 [INFO ] BaseTest - Navigated to: file:/C:/Users/HP/OneDrive/Desktop/aps/automation-framework/src/test/resources/mock/login.html
-22:04:05 [DEBUG] BaseTest - Mock mode: true
-22:04:05 [DEBUG] BaseTest - Mock API enabled: true
-22:04:05 [INFO ] ExtentTestListener - Test started: testLoginWithExcelData
-22:04:05 [INFO ] BaseTest - Testing login for: user@example.com | Expected: Pass
-22:04:06 [DEBUG] BasePage - Typed 'user@example.com' into element
-22:04:06 [INFO ] BasePage - Entered username: user@example.com
-22:04:06 [DEBUG] BasePage - Typed 'User@456' into element
-22:04:06 [INFO ] BasePage - Entered password
-22:04:06 [INFO ] MockApiServer - Mock API hit: POST /mock/api/v1/auth/login
-22:04:06 [DEBUG] BasePage - Clicked element: [[ChromeDriver: chrome on windows (5e0cf66a3154fdf36d740bc4b08e68db)] -> id: loginBtn]
-22:04:06 [INFO ] BasePage - Clicked Login button — mock login API will be called
-]]></system-out>
-    <system-err><![CDATA[May 30, 2026 10:04:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 30, 2026 10:04:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.216. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testLoginWithExcelData[{ExpectedResult=Fail, Username=wrong@example.com, Password=wrongpass}](3)" classname="com.automation.tests.LoginTest" time="2.217">
-    <system-out><![CDATA[22:04:08 [INFO ] ScreenshotUtil - Screenshot embedded in Extent report (Base64)
-22:04:08 [ERROR] BaseTest - [FAIL] Test FAILED: testLoginWithExcelData
-java.lang.AssertionError: Login should have succeeded for: user@example.com expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.8.0.jar:7.8.0]
-	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.8.0.jar:7.8.0]
-	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.8.0.jar:7.8.0]
-	at com.automation.tests.LoginTest.testLoginWithExcelData(LoginTest.java:56) ~[test-classes/:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.8.0.jar:7.8.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.8.0.jar:7.8.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227) ~[testng-7.8.0.jar:7.8.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.8.0.jar:7.8.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957) ~[testng-7.8.0.jar:7.8.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200) ~[testng-7.8.0.jar:7.8.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.8.0.jar:7.8.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.8.0.jar:7.8.0]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
-	at org.testng.TestRunner.privateRun(TestRunner.java:848) [testng-7.8.0.jar:7.8.0]
-	at org.testng.TestRunner.run(TestRunner.java:621) [testng-7.8.0.jar:7.8.0]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.8.0.jar:7.8.0]
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.8.0.jar:7.8.0]
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.8.0.jar:7.8.0]
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.8.0.jar:7.8.0]
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.8.0.jar:7.8.0]
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.8.0.jar:7.8.0]
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280) [testng-7.8.0.jar:7.8.0]
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200) [testng-7.8.0.jar:7.8.0]
-	at org.testng.TestNG.runSuites(TestNG.java:1114) [testng-7.8.0.jar:7.8.0]
-	at org.testng.TestNG.run(TestNG.java:1082) [testng-7.8.0.jar:7.8.0]
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.1.2.jar:3.1.2]
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.1.2.jar:3.1.2]
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.1.2.jar:3.1.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.1.2.jar:3.1.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.1.2.jar:3.1.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.1.2.jar:3.1.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.1.2.jar:3.1.2]
-22:04:09 [INFO ] BaseTest - === Browser Closed ===
-22:04:09 [INFO ] BaseTest - === Starting Browser Setup ===
-22:04:10 [INFO ] BrowserApiMock - Browser API mock interceptor injected (real APIs will route to mock server)
-22:04:10 [INFO ] BaseTest - Navigated to: file:/C:/Users/HP/OneDrive/Desktop/aps/automation-framework/src/test/resources/mock/login.html
-22:04:10 [DEBUG] BaseTest - Mock mode: true
-22:04:10 [DEBUG] BaseTest - Mock API enabled: true
-22:04:10 [INFO ] ExtentTestListener - Test started: testLoginWithExcelData
-22:04:10 [INFO ] BaseTest - Testing login for: wrong@example.com | Expected: Fail
-22:04:10 [DEBUG] BasePage - Typed 'wrong@example.com' into element
-22:04:10 [INFO ] BasePage - Entered username: wrong@example.com
-22:04:11 [DEBUG] BasePage - Typed 'wrongpass' into element
-22:04:11 [INFO ] BasePage - Entered password
-22:04:11 [INFO ] MockApiServer - Mock API hit: POST /mock/api/v1/auth/login
-22:04:11 [DEBUG] BasePage - Clicked element: [[ChromeDriver: chrome on windows (c6b94f47476cfc46b5e12be33e6c3a99)] -> id: loginBtn]
-22:04:11 [INFO ] BasePage - Clicked Login button — mock login API will be called
-]]></system-out>
-    <system-err><![CDATA[May 30, 2026 10:04:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 30, 2026 10:04:10 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.216. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testLoginWithExcelData[{ExpectedResult=Fail, Username=, Password=Admin@123}](4)" classname="com.automation.tests.LoginTest" time="2.26">
-    <system-out><![CDATA[22:04:12 [INFO ] BaseTest - Test PASSED: testLoginWithExcelData
-22:04:13 [INFO ] BaseTest - === Browser Closed ===
-22:04:13 [INFO ] BaseTest - === Starting Browser Setup ===
-22:04:14 [INFO ] BrowserApiMock - Browser API mock interceptor injected (real APIs will route to mock server)
-22:04:14 [INFO ] BaseTest - Navigated to: file:/C:/Users/HP/OneDrive/Desktop/aps/automation-framework/src/test/resources/mock/login.html
-22:04:14 [DEBUG] BaseTest - Mock mode: true
-22:04:14 [DEBUG] BaseTest - Mock API enabled: true
-22:04:14 [INFO ] ExtentTestListener - Test started: testLoginWithExcelData
-22:04:14 [INFO ] BaseTest - Testing login for:  | Expected: Fail
-22:04:15 [DEBUG] BasePage - Typed '' into element
-22:04:15 [INFO ] BasePage - Entered username: 
-22:04:15 [DEBUG] BasePage - Typed 'Admin@123' into element
-22:04:15 [INFO ] BasePage - Entered password
-22:04:15 [INFO ] MockApiServer - Mock API hit: POST /mock/api/v1/auth/login
-22:04:15 [DEBUG] BasePage - Clicked element: [[ChromeDriver: chrome on windows (232935b9a2cf4f086650997cead84cc6)] -> id: loginBtn]
-22:04:15 [INFO ] BasePage - Clicked Login button — mock login API will be called
-]]></system-out>
-    <system-err><![CDATA[May 30, 2026 10:04:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 30, 2026 10:04:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.216. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testLoginWithExcelData[{ExpectedResult=Fail, Username=admin@example.com, Password=}](5)" classname="com.automation.tests.LoginTest" time="2.227">
-    <system-out><![CDATA[22:04:17 [INFO ] BaseTest - Test PASSED: testLoginWithExcelData
-22:04:17 [INFO ] BaseTest - === Browser Closed ===
-22:04:17 [INFO ] BaseTest - === Starting Browser Setup ===
-22:04:18 [INFO ] BrowserApiMock - Browser API mock interceptor injected (real APIs will route to mock server)
-22:04:18 [INFO ] BaseTest - Navigated to: file:/C:/Users/HP/OneDrive/Desktop/aps/automation-framework/src/test/resources/mock/login.html
-22:04:18 [DEBUG] BaseTest - Mock mode: true
-22:04:18 [DEBUG] BaseTest - Mock API enabled: true
-22:04:18 [INFO ] ExtentTestListener - Test started: testLoginWithExcelData
-22:04:18 [INFO ] BaseTest - Testing login for: admin@example.com | Expected: Fail
-22:04:19 [DEBUG] BasePage - Typed 'admin@example.com' into element
-22:04:19 [INFO ] BasePage - Entered username: admin@example.com
-22:04:19 [DEBUG] BasePage - Typed '' into element
-22:04:19 [INFO ] BasePage - Entered password
-22:04:19 [INFO ] MockApiServer - Mock API hit: POST /mock/api/v1/auth/login
-22:04:19 [DEBUG] BasePage - Clicked element: [[ChromeDriver: chrome on windows (146d98c188fecdedf40e3c8ec56d8f35)] -> id: loginBtn]
-22:04:19 [INFO ] BasePage - Clicked Login button — mock login API will be called
-]]></system-out>
-    <system-err><![CDATA[May 30, 2026 10:04:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 30, 2026 10:04:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.216. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testValidLogin" classname="com.automation.tests.LoginTest" time="2.395">
-    <system-out><![CDATA[22:04:21 [INFO ] BaseTest - Test PASSED: testLoginWithExcelData
-22:04:21 [INFO ] BaseTest - === Browser Closed ===
-22:04:21 [INFO ] BaseTest - === Starting Browser Setup ===
-22:04:22 [INFO ] BrowserApiMock - Browser API mock interceptor injected (real APIs will route to mock server)
-22:04:22 [INFO ] BaseTest - Navigated to: file:/C:/Users/HP/OneDrive/Desktop/aps/automation-framework/src/test/resources/mock/login.html
-22:04:22 [DEBUG] BaseTest - Mock mode: true
-22:04:22 [DEBUG] BaseTest - Mock API enabled: true
-22:04:22 [INFO ] ExtentTestListener - Test started: testValidLogin
-22:04:22 [INFO ] BaseTest - Starting: testValidLogin
-22:04:23 [DEBUG] BasePage - Typed 'admin@example.com' into element
-22:04:23 [INFO ] BasePage - Entered username: admin@example.com
-22:04:23 [DEBUG] BasePage - Typed 'Admin@123' into element
-22:04:23 [INFO ] BasePage - Entered password
-22:04:23 [INFO ] MockApiServer - Mock API hit: POST /mock/api/v1/auth/login
-22:04:23 [INFO ] MockApiServer - Mock API hit: GET /mock/api/v1/dashboard
-22:04:23 [INFO ] MockApiServer - Mock API hit: GET /mock/api/v1/trains/search?sourceStationCode=NDLS&destinationStationCode=LTT&dateOfJourney=02-06-2026&addAvailabilityCache=true&sortBy=DEFAULT
-22:04:23 [DEBUG] BasePage - Clicked element: [[ChromeDriver: chrome on windows (8fd7b4376b948d37553e1e70cf249263)] -> id: loginBtn]
-22:04:23 [INFO ] BasePage - Clicked Login button — mock login API will be called
-22:04:25 [INFO ] BaseTest - testValidLogin PASSED
-]]></system-out>
-    <system-err><![CDATA[May 30, 2026 10:04:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 30, 2026 10:04:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.216. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 08, 2026 9:37:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.217. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
 </testsuite>
