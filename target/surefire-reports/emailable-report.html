@@ -9,10 +9,132 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Automation Test Suite</th></tr>
-<tr><td><a href="#t0">Ixigo Flight Booking Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">87,247</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Ixigo Flight Booking Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">55,767</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Ixigo Flight Booking Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automation.tests.IxigoFlightBookingTest</td><td><a href="#m0">testIxigoFlow</a></td><td rowspan="1">1780934854929</td><td rowspan="1">63415</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Ixigo Flight Booking Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.automation.tests.IxigoFlightBookingTest</td><td><a href="#m0">testIxigoFlow</a></td><td rowspan="2">1780935619395</td><td rowspan="2">23755</td></tr><tr class="failedeven"><td><a href="#m1">testIxigoFlow</a></td></tr></tbody>
 </table>
-<h2>Ixigo Flight Booking Tests</h2><h3 id="m0">com.automation.tests.IxigoFlightBookingTest#testIxigoFlow</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{lastName=Automation, firstName=Test User One, cvv=123, ToCity=Kolkata, FromCity=New Delhi, exp=12/30, Mobile=9667525275, cardNumber=4111111111111111, DepartDate=2026-06-15}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Ixigo Flight Booking Tests</h2><h3 id="m0">com.automation.tests.IxigoFlightBookingTest#testIxigoFlow</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{lastName=Automation, firstName=Test User One, cvv=123, ToCity=Kolkata, FromCity=New Delhi, exp=12/30, Mobile=9340299487, cardNumber=4111111111111111, DepartDate=2026-06-15}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button role=&quot;tab&quot; class=&quot;flex items-center relative transition-all min-h-40 py-5 border rounded-full px-15 text-selection-outline hover:bg-selection-over border-selection-outline hover:bg-subbrand-50&quot;&gt;...&lt;/button&gt; is not clickable at point (88, 208). Other element would receive the click: &lt;div class=&quot;fixed top-0 left-0 h-screen w-[calc(100%-440px)] flex flex-col justify-center items-center&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bc459dbcae90d5759fd348892ce6ab76, clickElement {id=f.516EA47783C0979C06F0AA00FF257F71.d.3F5C5782F313520DA65F24097094F1C9.e.316}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shikh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59935}, goog:processID: 5340, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59935/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bc459dbcae90d5759fd348892ce6ab76)] -&gt; xpath: //*[@role=&apos;tab&apos; and normalize-space()=&apos;One Way&apos;]]
+Session ID: bc459dbcae90d5759fd348892ce6ab76
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.automation.pages.IxigoFlightBookingPage.click(IxigoFlightBookingPage.java:136)
+	at com.automation.pages.IxigoFlightBookingPage.searchOneWayFlight(IxigoFlightBookingPage.java:67)
+	at com.automation.tests.IxigoFlightBookingTest.testIxigoFlow(IxigoFlightBookingTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.automation.tests.IxigoFlightBookingTest#testIxigoFlow</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{lastName=Automation, firstName=Test User One, cvv=123, ToCity=Kolkata, FromCity=New Delhi, exp=12/30, Mobile=9340299487, cardNumber=4111111111111111, DepartDate=2026-06-15}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;inline-flex justify-center items-center text-brand hover:bg-brand-over gap-5px rounded-10 min-h-40 button-md icon-md px-15px  hover:bg-primary text-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1177, 35). Other element would receive the click: &lt;iframe scrolling=&quot;no&quot; id=&quot;wiz-iframe-intent&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; style=&quot;color-scheme: none; z-index: 2147483647; display:block; height: 100% !important; width: 100% !important;min-height:80px !important;border:0px !important; border-color:none !important;&quot; srcdoc=&quot;&amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+  &amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;body{font-family: -apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,Oxygen,Ubuntu,Cantarell,&amp;quot;Open Sans&amp;quot;,&amp;quot;Helvetica Neue&amp;quot;,sans-serif;}.CT_InterstitialOuter{display: table;position: fixed;top: 0;left: 0;height: 100%;width: 100%;transform: translateZ(0);}.CT_InterstitialWrapper{display:table-cell;vertical-align:middle}.CT_Interstitial{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;max-width:600px;margin-left:auto;margin-right:auto;padding:20px;background-color:undefined;color:undefined;text-align:center;box-sizing:border-box;position:relative;border-radius:8px}.CT_InterstitialClose{cursor:pointer;position:absolute;top:-10px;right:-10px;z-index:2147483647;font-size:18px;font-weight:700;text-decoration:none;width:25px;height:25px;text-align:center;-webkit-appearance:none;line-height:22px;background:#353535;border:2px solid #fff;border-radius:100%;color:#fff}@media only screen and (max-width:768px){.CT_Interstitial{width:85%}}@media only screen and (max-width:480px){.CT_Interstitial{width:80%}}&amp;lt;/style&amp;gt;
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body&amp;gt;
+  &amp;lt;div id=&amp;quot;contentDiv&amp;quot; class=&amp;quot;CT_InterstitialOuter&amp;quot;&amp;gt;
+   &amp;lt;div class=&amp;quot;CT_InterstitialWrapper&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;CT_Interstitial&amp;quot;&amp;gt;
+     &amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;
+.CT_Interstitial {
+background-color: #fffeeb;
+padding: 0px !important;
+max-width: 50%;
+border-radius: 25px;
+}
+.popupImg {
+border-radius: 20px;
+}
+&amp;lt;/style&amp;gt; &amp;lt;button id=&amp;quot;closeButton&amp;quot; class=&amp;quot;btn&amp;quot; style=&amp;quot;position: absolute; top: 10px; right: 10px; width: 30px; height: 30px; border: none; border-radius: 50%; background-color: black; display: flex; justify-content: center; align-items: center; cursor: pointer; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);&amp;quot; wzrk_c2a=&amp;quot;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;font-size: 26px; line-height: 16px; color: white; font-weight: bold;&amp;quot;&amp;gt;×&amp;lt;/span&amp;gt; &amp;lt;/button&amp;gt; 
+     &amp;lt;img id=&amp;quot;popupImage&amp;quot; class=&amp;quot;popupImg&amp;quot; src=&amp;quot;https://images.ixigo.com/image/upload/mailer/flat80/f5c96a48928b43747e3ae72b00b0ce76-bmjqs.webp&amp;quot; style=&amp;quot;max-width: 100%;&amp;quot;&amp;gt; 
+     &amp;lt;script&amp;gt;
+var btn = document.getElementById(&apos;closeButton&apos;);
+var popupImage = document.getElementById(&apos;popupImage&apos;);
+var contentDiv = document.getElementById(&apos;contentDiv&apos;);
+var overlay = window.parent.document.getElementById(&apos;intentOpacityDiv&apos;);
+var wrapper = window.parent.document.getElementById(&apos;intentPreview&apos;);
+
+btn.addEventListener(&apos;click&apos;, closePopUp);
+contentDiv.addEventListener(&apos;click&apos;, handleOutsideClick);
+popupImage.addEventListener(&apos;click&apos;, navigateToHotels);
+
+function closePopUp() { 
+setTimeout(() =&amp;gt; {
+overlay.remove(); 
+wrapper.remove();
+}, 0); 
+}
+
+function handleOutsideClick(event) {
+closePopUp();
+}
+
+function navigateToHotels(event) {
+event.stopPropagation();
+window.parent.location.href = &apos;https://www.ixigo.com/hotels?source=Growth&amp;amp;subsource=WEB_POPUP_STAY55&apos;;
+}
+&amp;lt;/script&amp;gt;
+    &amp;lt;/div&amp;gt;
+   &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+ &amp;lt;script&amp;gt;
+      const ct__camapignId = &apos;1780926698_20260608&apos;;
+      const ct__formatVal = (v) =&amp;gt; {
+          return v &amp;amp;&amp;amp; v.trim().substring(0, 20);
+      }
+      const ct__parentOrigin =  window.parent.origin;
+      document.body.addEventListener(&apos;click&apos;, (event) =&amp;gt; {
+        const elem = event.target.closest?.(&apos;a[wzrk_c2a], button[wzrk_c2a]&apos;);
+        if (elem) {
+            const {innerText, id, name, value, href} = elem;
+            const clickAttr = elem.getAttribute(&apos;onclick&apos;) || elem.getAttribute(&apos;click&apos;);
+            const onclickURL = clickAttr?.match(/(window.open)[(](&amp;quot;|&apos;)(.*)(&amp;quot;|&apos;,)/)?.[3] || clickAttr?.match(/(location.href *= *)(&amp;quot;|&apos;)(.*)(&amp;quot;|&apos;)/)?.[3];
+            const props = {innerText, id, name, value};
+            let msgCTkv = Object.keys(props).reduce((acc, c) =&amp;gt; {
+                const formattedVal = ct__formatVal(props[c]);
+                formattedVal &amp;amp;&amp;amp; (acc[&apos;wzrk_click_&apos; + c] = formattedVal);
+                return acc;
+            }, {});
+            if(onclickURL) { msgCTkv[&apos;wzrk_click_&apos; + &apos;url&apos;] = onclickURL; }
+            if(href) { msgCTkv[&apos;wzrk_click_&apos; + &apos;c2a&apos;] = href; }
+            const notifData = { msgId: ct__camapignId, msgCTkv, pivotId: &apos;wzrk_default&apos; };
+            window.parent.clevertap.renderNotificationClicked(notifData);
+        }
+      });
+      &amp;lt;/script&amp;gt;
+    
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75feb5303b81b7557bf49143468d886b, clickElement {id=f.E38BE277AA0EBEA220B76F9538D7D3E9.d.688CC5AACA3D7FB67DD738FD2BC850F2.e.204}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shikh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61440}, goog:processID: 616, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61440/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (75feb5303b81b7557bf49143468d886b)] -&gt; xpath: (//button[text()=&apos;Log in/Sign up&apos;])[1]]
+Session ID: 75feb5303b81b7557bf49143468d886b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.automation.pages.IxigoFlightBookingPage.click(IxigoFlightBookingPage.java:136)
+	at com.automation.pages.IxigoFlightBookingPage.loginWithMobile(IxigoFlightBookingPage.java:58)
+	at com.automation.tests.IxigoFlightBookingTest.testIxigoFlow(IxigoFlightBookingTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
